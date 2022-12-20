@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <title>ETO - 彩田分部 | 匿名交流区</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>♾️</text></svg>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/04fc4e786e.js" crossorigin="anonymous"></script>
+    <!-- ... -->
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+  />
+</head>
+
+<div class="menu" style="z-index:999;" id="menu">
+  
+    <ul>
+        <li><a href="/"><i class="fa-solid fa-screwdriver-wrench"></i>&ensp;首页</a></li>
+        <li><a href="/about.html"><i class="fa-solid fa-user"></i>&ensp;关于</a></li>
+        <li><a href="/messageboard.html"><i class="fa-solid fa-message"></i>&ensp;留言板</a></li>
+        <li><a href="/messageboard.html"><i class="fa-solid fa-message"></i>&ensp;留言板</a></li>
+    </ul>
+</div>
+
+<div class="content">
+    <h1>ETO彩田分部 - 匿名交流区</h1>
+    <div class="line"></div>
+    <br>
+    <h3>这里是ETO彩田分部的匿名交流区</h3>
+    <h3>由冥王星开发</h3>
+    <h3>用于交流组织内重要事务</h3>
+    <h3>建议点击登录并注册</h3>
+    <h3>使用固定账号方便管理</h3>
+    <h3>注册后请联系管理员</h3>
+    <h3>方便给予ID和称号</h3>
+    <h3  style="color: red;">已开启评论先发送后审核</h3>
+    <h3  style="color: red;">严禁血腥、暴力、色情语言</h3>
+    <h3 style="color: red;">严禁暴露自己或他人的个人信息</h3>
+    <h3 style="color: red;">违反三次以上将封禁账号</h3>
+    <br>
+    <div id="article-info">
+        <!-- ... -->
+        <h3>访问次数: <span class="waline-pageview-count" data-path="/"></span></h3>
+        <!-- ... -->
+        
+    </div>
+    <h3>本页面共有<span class="waline-comment-count" data-path="/"></span>条评论</h3>
+    <div class="line"></div>
+    <br>
+    <div id="waline" style="width: 90%;margin-left: 5%;"></div>
+    <style>
+        :root {
+            --waline-border: none;
+            --waline-box-shadow: 0 12px 40px rgb(134 151 168 / 25%);
+            --waline-theme-color: #0085dd;
+            --waline-active-color: #0099ff;
+        }
+    </style>
+    <script type="module">
+        import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+    
+        init({
+        el: '#waline',
+        serverURL: 'https://app-production-8b94.up.railway.app',
+        path:'/',
+        pageview: true,
+        comment: true,
+        
+        
+        });
+    </script>
+
+      
+
+</div>
